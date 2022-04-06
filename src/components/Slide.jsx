@@ -55,7 +55,7 @@ export const Slide = () => {
         >
           {Items.map((item) => (
             <>
-            <div className="slide-color" style={{backgroundColor:`${item.color}`}}>
+            <div className="slide-block" style={{backgroundColor:`${item.color}`}}>
                 <h3>{item.name}</h3>
                 <img src={item.url} alt="" className={classes.image} />
 

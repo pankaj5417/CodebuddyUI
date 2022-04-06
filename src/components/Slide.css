@@ -1,14 +1,18 @@
 .slideContainer{
     background-color:transparent;
      
-    min-width: 20vw;
-    width: 50vw;
-    margin: 2px;
+    min-width: 400px;
+    width: 60vw;
+    margin: 5px;
+    text-align: center;
 
 }
 .slides-container{
     background-color:rgba(34,34,34,.9);
 }
-.slide-color{
+.slide-block{
     margin: 7px;
+    width: 220px;
+    height: 240px;
+    
 }

@@ -17,7 +17,7 @@ export const Searchbar = () => {
             src="https://r.bing.com/rp/s2tlPUrMzBwZzzDmnv24-pPhALs.svg"
             alt=""
           />
-          <Search className="search-logo" />
+          <Search color="primary" className="search-logo" />
         </div>
       </div>
     </>
