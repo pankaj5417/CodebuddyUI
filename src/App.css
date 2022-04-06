@@ -1,6 +1,7 @@
 .bing-container{
   background-image: url("https://wallpaperaccess.com/full/277912.jpg");
   height: 100vh;
+  min-width: 8vw;
 
 }
 .slide-container{

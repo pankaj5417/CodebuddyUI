@@ -131,8 +131,8 @@ export const Navbar = () => {
                     show MenuBar
                   </a>
                   <Switch
-                    checked={state.checkedB}
-                    onChange={handleChange}
+                   // checked={state.checkedB}
+                    //onChange={handleChange}
                     color="primary"
                     name="checkedB"
                     inputProps={{ "aria-label": "primary checkbox" }}
@@ -157,8 +157,8 @@ export const Navbar = () => {
                     show HomePage Image
                   </a>
                   <Switch
-                    checked={state.checkedB}
-                    onChange={handleChange}
+                   // checked={state.checkedB}
+                   // onChange={handleChange}
                     color="primary"
                     name="checkedB"
                     inputProps={{ "aria-label": "primary checkbox" }}
