@@ -1,7 +1,12 @@
 .navbar {
+    width: 100%;
+    min-width: 14vw !important;
   background: transparent !important;
   color: white !important;
   position: sticky;
+  top: 0;
+ 
+
 }
 .microsoft-logo {
   width: 40px;
@@ -28,8 +33,9 @@ a {
   width: 30px;
 }
 .navbar-right-container {
-  width: 14%;
-  margin-right: 7%;
+  width: 10vw;
+  min-width: 8vw;
+  margin-right: 10vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,4 +60,7 @@ a {
   color: black !important;
   margin-left: 10px;
   margin-top: 18px;
+}
+.navbar-toggler-icon{
+  display: none!important;
 }

@@ -9,8 +9,8 @@
    
 }
 #searchbar{
-    width: 60%;
-    height: 60px;
+    width: 50vw;
+    height: 6vh;
     border-radius: 30px;
     outline: none;
     border: none;
@@ -18,9 +18,9 @@
 
 .searchbar-container{
     display: flex;
-    width: 70%;
-    height: 80px;
-   margin-top:10%;
+    width: 80vh;
+    height: 4vh;
+   margin-top:20vh;
    margin-left: 30%;
    align-items: center;
 }

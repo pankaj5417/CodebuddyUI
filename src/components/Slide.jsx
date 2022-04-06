@@ -7,10 +7,10 @@ import "./Slide.css";
 
 const useStyle = makeStyles({
   image: {
+      minWidth:140,
     height: 150,
   },
-  component: {},
-  timer: {},
+  
 });
 
 const responsive = {
@@ -35,11 +35,11 @@ export const Slide = () => {
 
   return (
     <>
-      <Box>
+      <Box className="slideContainer">
         <Carousel
           swipeable={false}
           draggable={false}
-          showDots={true}
+         // showDots={true}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
@@ -55,8 +55,11 @@ export const Slide = () => {
         >
           {Items.map((item) => (
             <>
+            <div className="slide-color" style={{backgroundColor:`${item.color}`}}>
                 <h3>{item.name}</h3>
                 <img src={item.url} alt="" className={classes.image} />
+
+            </div>
             </>
           ))}
         </Carousel>

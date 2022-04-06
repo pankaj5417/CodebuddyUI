@@ -43,11 +43,11 @@ export const Navbar = () => {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
+           // data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+           // aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -73,7 +73,6 @@ export const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
         <div className="navbar-right-container">
           <p>Sign In</p>
           <PersonIcon color="white" />
@@ -168,6 +167,7 @@ export const Navbar = () => {
               </ul>
             </div>
           ) : null}
+        </div>
         </div>
       </nav>
     </>
