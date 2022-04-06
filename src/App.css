@@ -1,0 +1,11 @@
+.bing-container{
+  background-image: url("https://cdn.wallpapersafari.com/37/24/UJwPAs.jpg");
+  height: 100vh;
+}
+.slide-container{
+  width: 60%;
+  margin: auto;
+  height: 200px;
+  margin-top: 20%;
+  color: white;
+}

@@ -1,0 +1,40 @@
+.searchLogo{
+    width: 40px;
+    height: 40px;
+    
+}
+.search-logo{
+    width: 50px !important;
+    height: 50px !important;
+   
+}
+#searchbar{
+    width: 60%;
+    height: 65px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+.searchbar-container{
+    display: flex;
+    width: 70%;
+    height: 80px;
+   margin-top:10%;
+   margin-left: 30%;
+   align-items: center;
+}
+.search-voice-logo{
+    width: 40px;
+    height: 40px;
+
+}
+.search-logo-container{
+    width: 140px;
+    margin-left: -160px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
