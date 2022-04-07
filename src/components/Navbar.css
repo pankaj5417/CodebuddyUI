@@ -55,7 +55,7 @@ a {
 .drop-down {
   background-color: white;
   position: fixed;
-  height: 70vh;
+  height: 80vh;
   width: 400px;
   border-radius: 6px;
   margin-left: -160px;
