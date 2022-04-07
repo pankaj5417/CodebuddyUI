@@ -83,8 +83,8 @@ export const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className=" " id="navbarNav">
-            <ul className="navbar-nav">
+          <div style={{width:"300px",display:"flex"}} className=" " id="navbarNav">
+            <ul style={{width:"300px",display:"flex",flexDirection:"row"}} className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
                   Images
@@ -108,7 +108,7 @@ export const Navbar = () => {
           </div>
           <div className="navbar-right-container">
               <div className="sign-in-button">
-            <p>Sign in</p>
+            <p style={{width:"90px"}}>Sign in</p>
             <PersonIcon color="white" />
 
               </div>
