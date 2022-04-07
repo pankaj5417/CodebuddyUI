@@ -31,9 +31,13 @@ const useStyles = makeStyles((theme) => ({
 export const Navbar = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(true);
+  const [opens,setOpens]=useState(true)
 
   const handleClick = () => {
     setOpen(!open);
+  };
+  const handleSecondClick = () => {
+    setOpens(!opens);
   };
   const [dropdown, setDropDown] = useState(false);
 
@@ -191,24 +195,36 @@ export const Navbar = () => {
                       Feedback
                     </a>
                   </li>
-                  <li>
+                
+                     
+
+                     
+                      
+                    <ListItem button onClick={handleSecondClick}>
+                        <ListItemIcon>
                     <HomeIcon color="action" />
-                    <a className="text-color" href="">
-                      Customize your homepage
-                    </a>
-                  </li>
+                        </ListItemIcon>
+                        <ListItemText secondary="Customize your homepage" />
+                        {opens ? (
+                          <ExpandLess color="action" />
+                        ) : (
+                          <ExpandMore color="action" />
+                        )}
+                      </ListItem>
+                      <Collapse in={opens} timeout="auto" unmountOnExit>
+                    
                   <li>
                     <img src="" alt="" />
                     <a className="text-color" href="">
                       show MenuBar
                     </a>
                     <Switch
-                      // checked={state.checkedB}
+                      checked={state.checkedB}
                       //onChange={handleChange}
-                      color="secondary"
+                      color="primary"
                       name="checkedB"
                       inputProps={{ "aria-label": "secondary checkbox" }}
-                    />
+                      />
                   </li>
                   <li>
                     <img src="" alt="" />
@@ -216,9 +232,9 @@ export const Navbar = () => {
                       show News and Interests
                     </a>
                     <Switch
-                      // checked={state.checkedB}
+                       checked={state.checkedB}
                       // onChange={handleChange}
-                      color="secondary"
+                      color="primary"
                       name="checkedB"
                       inputProps={{ "aria-label": "secondary checkbox" }}
                     />
@@ -229,13 +245,14 @@ export const Navbar = () => {
                       show HomePage Image
                     </a>
                     <Switch
-                      // checked={state.checkedB}
-                      // onChange={handleChange}
-                      color="secondary"
-                      name="checkedB"
-                      inputProps={{ "aria-label": "secondary checkbox" }}
-                    />
+                       checked={state.checkedB}
+                       // onChange={handleChange}
+                       color="primary"
+                       name="checkedB"
+                       inputProps={{ "aria-label": "secondary checkbox" }}
+                       />
                   </li>
+                  </Collapse>
                 </ul>
               </div>
             ) : null}
